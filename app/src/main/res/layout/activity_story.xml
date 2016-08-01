@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.StoryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/storyTextView"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Home to Earth"
+        android:id="@+id/choiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/white"
+        android:textColor="#FF3A8AEC"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop and investigate"
+        android:id="@+id/choiceButton1"
+        android:background="@android:color/white"
+        android:textColor="#3a8aec"
+        android:layout_above="@+id/choiceButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
